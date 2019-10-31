@@ -60,6 +60,13 @@
         background-color: @white;
         transition: 0.15s all ease-in-out;
     }
+
+    @media @xl {
+        left: 0;
+        right: 0;
+        top: unset;
+        bottom: 20px;
+    }
 }
 
 .hero-form {
@@ -71,6 +78,12 @@
     text-align: center;
     color: @white;
     width: 375px;
+    @media @xl {
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 .hero-form__header {
@@ -161,6 +174,9 @@
     width: 1140px;
     margin: 0 auto;
     text-align: center;
+    @media @lg {
+        width: 100%;
+    }
 }
 .flow-column {
     width: 371px;
@@ -170,6 +186,15 @@
 .flow-column + .flow-column {
     margin-left: 10px;
 }
+
+.flow-column,
+.flow-column + .flow-column {
+    @media @lg {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
 .flow-box {
     padding-left: 40px;
     padding-top: 115px;
@@ -287,10 +312,20 @@
     padding-top: 25px;
     color: @white;
     background-color: @red;
+    
+    @media @lg {
+        float: none;
+        margin: 20px auto;
+    }
+
 }
 
 .featured-box + .featured-box {
     margin-left: 10px;
+
+    @media @lg {
+        margin: 20px auto;
+    }
 }
 
 .featured-box__logo {
@@ -378,6 +413,11 @@
     float: left;
     width: 50%;
     height: 460px;
+    @media @md {
+        float: none;
+        width: 100%;
+        height: 400px;
+    }
 }
 
 .info-box__image {

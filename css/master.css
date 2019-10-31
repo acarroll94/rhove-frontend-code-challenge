@@ -181,6 +181,14 @@ table {
   background-color: #fefefe;
   transition: 0.15s all ease-in-out;
 }
+@media only screen and (max-width: 1100px) {
+  .hero__btn {
+    left: 0;
+    right: 0;
+    top: unset;
+    bottom: 20px;
+  }
+}
 .hero-form {
   position: absolute;
   top: 148px;
@@ -190,6 +198,14 @@ table {
   text-align: center;
   color: #fefefe;
   width: 375px;
+}
+@media only screen and (max-width: 1100px) {
+  .hero-form {
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 .hero-form__header {
   font-size: 3em;
@@ -281,6 +297,11 @@ table {
   margin: 0 auto;
   text-align: center;
 }
+@media only screen and (max-width: 940px) {
+  .flow-columns {
+    width: 100%;
+  }
+}
 .flow-column {
   width: 371px;
   text-align: left;
@@ -288,6 +309,13 @@ table {
 }
 .flow-column + .flow-column {
   margin-left: 10px;
+}
+@media only screen and (max-width: 940px) {
+  .flow-column,
+  .flow-column + .flow-column {
+    float: none;
+    margin: 20px auto;
+  }
 }
 .flow-box {
   padding-left: 40px;
@@ -417,8 +445,19 @@ table {
   color: #fefefe;
   background-color: #ef2646;
 }
+@media only screen and (max-width: 940px) {
+  .featured-box {
+    float: none;
+    margin: 20px auto;
+  }
+}
 .featured-box + .featured-box {
   margin-left: 10px;
+}
+@media only screen and (max-width: 940px) {
+  .featured-box + .featured-box {
+    margin: 20px auto;
+  }
 }
 .featured-box__date {
   margin-top: 8px;
@@ -501,6 +540,14 @@ table {
   float: left;
   width: 50%;
   height: 460px;
+}
+@media only screen and (max-width: 768px) {
+  .info-box__image,
+  .info-box__copy {
+    float: none;
+    width: 100%;
+    height: 400px;
+  }
 }
 .info-box__image {
   background-image: url('https://picsum.photos/id/350/500/500');
@@ -702,7 +749,7 @@ table {
 }
 .header__menu-item {
   display: inline-block;
-  max-width: 90px;
+  width: 90px;
   padding-left: 16px;
   padding-right: 16px;
   color: #4e5255;
@@ -717,6 +764,21 @@ table {
   font-weight: 700;
   font-style: normal;
   color: #050505;
+}
+@media only screen and (max-width: 768px) {
+  .header__logo {
+    float: none;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .header__menu-box {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+  .header__menu-item + .header__menu-item {
+    margin-left: 40px;
+  }
 }
 /*Utilities*/
 /*#region Imports*/
