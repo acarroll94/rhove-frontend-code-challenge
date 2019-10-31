@@ -1,0 +1,33 @@
+﻿@import "utilities.less";
+
+.header {
+    .content-wrapper();
+    padding-bottom: 30px;
+}
+
+.header__logo {
+    margin-left: 145px;
+    float: left;
+}
+
+.header__menu-box {
+    margin-top: 18px;
+    margin-right: 130px;
+    float: right;
+}
+
+.header__menu-item {
+    display: inline-block;
+    max-width: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: @gray-dark;
+    .roboto-medium();
+    text-align: center;
+    .uppercase();
+
+    &:hover {
+        .roboto-bold();
+        color: @black;
+    }
+}
